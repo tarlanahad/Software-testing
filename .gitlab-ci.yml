@@ -1,0 +1,9 @@
+run_unit_test:
+    stage: test
+    image: gradle:6.8.3
+    script:
+        - gradle test
+    artifacts:
+        paths:
+            - build/reports/jacoco/test/html
+        expire_in: 1 week
