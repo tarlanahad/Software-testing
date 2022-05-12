@@ -12,12 +12,12 @@ import java.util.*;
 public class Signup extends basePage{
     
 
-    private String url = "https://cooodes.com/register";
-    String full_name_xpath = "/html/body/app-root/app-register/div/div/div/div/div/div/form/div[1]/input";
-    String email_xpath ="/html/body/app-root/app-register/div/div/div/div/div/div/form/div[2]/input";
-	String username_xpath = "/html/body/app-root/app-register/div/div/div/div/div/div/form/div[3]/input";
-    String password_xpath = "/html/body/app-root/app-register/div/div/div/div/div/div/form/div[4]/input";
-    String button_xpath = "/html/body/app-root/app-register/div/div/div/div/div/div/form/div[5]/button";
+    private String url = "https://non-voip.com/auth/register";
+    String full_name_xpath = "/html/body/div[1]/div/div/div/div/form/div[2]/div[4]/div/input";
+    String email_xpath ="/html/body/div[1]/div/div/div/div/form/div[2]/div[2]/input";
+	String username_xpath = "/html/body/div[1]/div/div/div/div/form/div[2]/div[1]/input";
+    String password_xpath = "/html/body/div[1]/div/div/div/div/form/div[2]/div[3]/div/input";
+    String button_xpath = "/html/body/div[1]/div/div/div/div/form/div[2]/div[5]/button";
     String home_page_test = "/html/body/app-root/app-register/div/div/div/div/div/div/div/div/div";
 		
     public Signup(WebDriver driver){
@@ -46,7 +46,7 @@ public class Signup extends basePage{
         usernameElement.sendKeys(username);
 		passowrdElement.sendKeys(password);
 		buttonElement.click();
-        this.waitVisibiiltyAndFindElement(home_page_test_element);
+        //this.waitVisibiiltyAndFindElement(home_page_test_element);
 		return new Email(this.driver);
 	}
    

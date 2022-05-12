@@ -8,15 +8,15 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import static org.junit.Assert.*;
 import org.openqa.selenium.support.ui.*;
 import java.util.*;
-public class cooodes extends basePage{
-	private String url = "https://cooodes.com";
+public class Nonvoip extends basePage{
+	private String url = "https://non-voip.com";
 	
 	
-	public cooodes(WebDriver driver){
+	public Nonvoip(WebDriver driver){
 		super(driver);
 		this.driver.get(this.url);
 	}
-	public cooodes(WebDriver driver,Boolean isLogedIn){
+	public Nonvoip(WebDriver driver,Boolean isLogedIn){
 		super(driver,isLogedIn);
 		this.driver.get(this.url);
 	}
@@ -34,9 +34,7 @@ public class cooodes extends basePage{
 	Signup load_register_page(){
 		return new Signup(this.driver);
 	}
-	Code load_code_page(){
-		return new Code(this.driver);
-	}
+	
 	ContactUS load_contact_us_page(){
 		return new ContactUS(this.driver);
 		

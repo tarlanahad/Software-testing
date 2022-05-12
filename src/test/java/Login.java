@@ -9,11 +9,11 @@ import static org.junit.Assert.*;
 import org.openqa.selenium.support.ui.*;
 import java.util.*;
 public class Login extends basePage{
-    private String url = "https://cooodes.com/login";
-	String username_xpath = "/html/body/app-root/app-login/div/div/div/div/div/div/form/div[1]/input";
-    String password_xpath = "/html/body/app-root/app-login/div/div/div/div/div/div/form/div[2]/input";
-    String button_xpath = "/html/body/app-root/app-login/div/div/div/div/div/div/form/div[3]/div[2]/button";
-    String home_page_test = "/html/body/app-root/app-dashboard/main/div/div[2]/div/section/article/div[1]/button/h1";
+    private String url = "https://non-voip.com/auth/login";
+	String username_xpath = "/html/body/div[1]/div/div/div/div/form/div[2]/div[1]/input";
+    String password_xpath = "/html/body/div[1]/div/div/div/div/form/div[2]/div[2]/div/input";
+    String button_xpath = "/html/body/div[1]/div/div/div/div/form/div[2]/div[3]/button";
+    String home_page_test = "/html/body/div[1]/div/div/div/div/input";
 		
     public Login(WebDriver driver){
         super(driver);
